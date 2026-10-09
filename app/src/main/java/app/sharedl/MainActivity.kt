@@ -1,4 +1,4 @@
-package fr.partagevideo
+package app.sharedl
 
 import android.app.Activity
 import android.content.Intent
@@ -20,7 +20,7 @@ class MainActivity : Activity() {
     private lateinit var content: LinearLayout
     private lateinit var downloadStatus: TextView
     private val downloader = Executors.newSingleThreadExecutor()
-    private val videosDir by lazy { File(getExternalFilesDir("Movies"), "PartageVideo").apply { mkdirs() } }
+    private val videosDir by lazy { File(getExternalFilesDir("Movies"), "ShareDL").apply { mkdirs() } }
     private val prefs by lazy { getSharedPreferences("settings", MODE_PRIVATE) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -50,7 +50,7 @@ class MainActivity : Activity() {
         setContentView(scroll)
 
         content.addView(TextView(this).apply {
-            text = "Partage Vidéo"
+            text = "ShareDL"
             textSize = 28f
         })
         content.addView(TextView(this).apply {

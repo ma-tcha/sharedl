@@ -4,14 +4,14 @@ plugins {
 }
 
 android {
-    namespace = "fr.partagevideo"
+    namespace = "app.sharedl"
     compileSdk = 35
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
     defaultConfig {
-        applicationId = "fr.partagevideo"
+        applicationId = "app.sharedl"
         minSdk = 26
         targetSdk = 35
         versionCode = 1

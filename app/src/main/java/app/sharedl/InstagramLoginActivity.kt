@@ -1,4 +1,4 @@
-package fr.partagevideo
+package app.sharedl
 
 import android.app.Activity
 import android.os.Bundle

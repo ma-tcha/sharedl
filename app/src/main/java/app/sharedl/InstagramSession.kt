@@ -1,4 +1,4 @@
-package fr.partagevideo
+package app.sharedl
 
 import android.content.Context
 import android.webkit.CookieManager
